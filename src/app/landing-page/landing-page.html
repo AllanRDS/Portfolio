@@ -183,16 +183,18 @@
 
       <div class="space-y-8">
         <div *ngFor="let exp of experiences"
-          class="bg-slate-50 dark:bg-dark-indigo p-8 rounded-3xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow">
+          class="bg-slate-50 dark:bg-dark-indigo p-8 rounded-3xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row gap-6 md:gap-8 items-start hover:shadow-xl transition-shadow">
           <div
             class="w-16 h-16 bg-primary-azure/10 rounded-2xl flex items-center justify-center flex-shrink-0 text-primary-azure">
             <lucide-icon [name]="exp.type === 'Experience' ? 'briefcase' : 'terminal'" class="w-8 h-8"></lucide-icon>
           </div>
           <div class="flex-grow">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2 items-start">
               <h3 class="text-2xl font-outfit font-bold text-slate-900 dark:text-white">{{exp.company}}</h3>
               <span
-                class="px-3 py-1 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-sm font-medium">{{exp.period}}</span>
+                class="inline-flex items-center px-3 py-1 bg-primary-azure/10 text-primary-azure border border-primary-azure/20 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] w-fit shadow-sm shadow-primary-azure/5">
+                {{exp.period}}
+              </span>
             </div>
             <p class="text-primary-azure font-semibold mb-4 text-lg">{{exp.role}}</p>
             <p class="text-slate-600 dark:text-slate-400 leading-relaxed max-w-4xl">{{exp.description}}</p>
