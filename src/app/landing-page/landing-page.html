@@ -64,11 +64,24 @@
 
   <!-- Hero Section -->
   <section id="home"
-    class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 bg-slate-50 dark:bg-dark-indigo overflow-hidden relative">
+    class="pt-24 pb-12 lg:pt-48 lg:pb-32 px-4 bg-slate-50 dark:bg-dark-indigo overflow-hidden relative">
     <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary-azure/10 rounded-full blur-3xl"></div>
     <div class="max-w-7xl mx-auto relative">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div class="text-center lg:text-left">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <!-- Photo (Mobile: Order 1, Desktop: Order 2) -->
+        <div class="flex justify-center lg:order-2">
+          <div class="relative mb-4 lg:mb-0">
+            <div class="absolute -inset-4 bg-primary-azure/20 rounded-full blur-2xl"></div>
+            <div
+              class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-primary-azure/30 shadow-2xl shadow-primary-azure/10">
+              <img src="assets/1762971524983.jpg" alt="Allan Reymond" class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.parentElement.classList.add('bg-slate-800', 'flex', 'items-center', 'justify-center'); this.parentElement.innerHTML='<span class=\'text-6xl font-outfit font-bold text-primary-azure\'>AR</span>';">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Content (Mobile: Order 2, Desktop: Order 1) -->
+        <div class="text-center lg:text-left lg:order-1">
           <div
             class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-azure/10 rounded-full border border-primary-azure/20 mb-6">
             <lucide-icon name="cloud" class="w-4 h-4 text-primary-azure"></lucide-icon>
@@ -96,18 +109,6 @@
               class="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all flex items-center justify-center gap-2">
               Download CV <lucide-icon name="external-link" class="w-5 h-5"></lucide-icon>
             </a>
-          </div>
-        </div>
-
-        <!-- Photo -->
-        <div class="hidden lg:flex justify-center">
-          <div class="relative">
-            <div class="absolute -inset-4 bg-primary-azure/20 rounded-full blur-2xl"></div>
-            <div
-              class="relative w-80 h-80 rounded-full overflow-hidden border-4 border-primary-azure/30 shadow-2xl shadow-primary-azure/10">
-              <img src="assets/1762971524983.jpg" alt="Allan Reymond" class="w-full h-full object-cover"
-                onerror="this.style.display='none'; this.parentElement.classList.add('bg-slate-800', 'flex', 'items-center', 'justify-center'); this.parentElement.innerHTML='<span class=\'text-6xl font-outfit font-bold text-primary-azure\'>AR</span>';">
-            </div>
           </div>
         </div>
       </div>
