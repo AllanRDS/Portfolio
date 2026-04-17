@@ -33,6 +33,7 @@ export class LandingPage {
     { title: 'AZ-900', name: 'Microsoft Azure Fundamentals', icon: 'award' },
     { title: 'DP-900', name: 'Microsoft Azure Data Fundamentals', icon: 'database' },
     { title: 'AI-900', name: 'Microsoft Azure AI Fundamentals', icon: 'cpu' },
+    { title: 'PL-900', name: 'Microsoft Power Platform Fundamentals', icon: 'award' },
     { title: 'Inglês B2.2', name: 'goFluent', icon: 'award' }
   ];
 
