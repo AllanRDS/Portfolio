@@ -58,9 +58,9 @@ export class LandingPage {
   experiences = [
     {
       company: 'Avanade',
-      role: 'Estagiário Data Analyst & Data Engineer',
+      role: 'Data Analyst',
       period: 'Atualmente',
-      description: 'Atuação em modelo híbrido como Data Analyst e Data Engineer, focando em criar visualizações de dados impactantes com Power BI e tratar, processar e transformar dados utilizando Databricks, SQL, Python e Apache Spark.',
+      description: 'Atuação em modelo híbrido como Data Analyst, focando em criar visualizações de dados impactantes com Power BI e tratar, processar e transformar dados utilizando Databricks, SQL, Python e Apache Spark.',
       type: 'Experience'
     },
     {
